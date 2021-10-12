@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Account</title>
+    <link href="Main.css" type="text/css" rel="stylesheet" /> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<html>
+  <body>
+    <div id="nav">
+    </div>
+    <script>
+        $(function(){
+          $("#nav").load("Nav.html");
+        });
+    </script>
+      <div id="account">
+        <h1>
+            Account Settings
+        </h1>
+        <img src="Img/75-758282_walter-circle-person-photo-in-circle-hd-png.png" alt="Profile Picture" height="150" id="pfp">
+        <input type="text" size="20" placeholder="First Name" class="textbox">
+        <input type="text" size="20" placeholder="Last Name" class="textbox">
+        <input type="text" size="20" placeholder="Email" class="textbox">
+        <input type="text" size="20" placeholder="Password" class="textbox">
+        <input type="text" size="20" placeholder="Phone Number" class="textbox">
+        <input type="text" size="20" placeholder="Street Address" class="textbox">
+        <input type="text" size="20" placeholder="City" class="textbox">
+        <input type="text" size="20" placeholder="Postal Code" class="textbox">
+        <input type="text" size="20" placeholder="State / Region" class="textbox">
+        <input type="text" size="20" placeholder="Country" class="textbox">
+        <button type="button" class="account_button">Save Changes</button>
+        <button type="button" class="account_button">Reset Password</button>
+      </div>
+  </body>
+</html>
