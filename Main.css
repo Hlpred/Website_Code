@@ -110,6 +110,7 @@ a.navbar__link {
     margin-right: auto;
     padding: 10px;
 }
+
 .textbox {
     margin: 8px;
     display: block;
@@ -126,6 +127,8 @@ a.navbar__link {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/*Main Home page image and button start*/
 
 #hero {
     
@@ -147,4 +150,26 @@ a.navbar__link {
     color: var(--offWhite);
     width: 150;
     height: 100px
+}
+
+/*Main Home page image and button end*/
+
+.act_row {
+    display: flex;
+    justify-content: center;
+}
+
+.textbox_act {
+    margin: 9px;
+}
+
+.title_act {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#postal_code {
+    margin-left: 100px;
 }
