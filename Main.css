@@ -180,3 +180,15 @@ a.navbar__link {
     justify-content: space-between;
     margin-top: 50px;
 }
+
+#footer {
+    display: flex;
+    height: 100px;
+    background-color: var(--mainColor);
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    min-height: calc(100vh - 200px);
+}

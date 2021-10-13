@@ -7,31 +7,40 @@
 </head>
 <html>
   <body>
-    <div id="nav">
-    </div>
-    <script>
-        $(function(){
-          $("#nav").load("Nav.html");
-        });
-    </script>
-    <div>
+    <div class="content">
+      <div id="nav">
+      </div>
+      <script>
+          $(function(){
+            $("#nav").load("Nav.html");
+          });
+      </script>
+      <div>
+          <h1>
+              All the books for you, in one place
+          </h1>
+      </div>
+      <div id="hero_area">
+          <img src="Img/Gear-Books-Roundup-671406905.jpg" alt="Wall of Books" id="hero">
+          <button type="button" id="shop_button">Browse Now</button>
+      </div>   
+      <div>
         <h1>
-            All the books for you, in one place
+            Trending Books:
         </h1>
-    </div>
-    <div id="hero_area">
-        <img src="Img/Gear-Books-Roundup-671406905.jpg" alt="Wall of Books" id="hero">
-        <button type="button" id="shop_button">Browse Now</button>
-    </div>   
-    <div>
-      <h1>
-          Trending Books:
-      </h1>
-    </div>
-    <div class="carousel">
-      <img src="Img/Programming_Books/41hGo6CTPqL._SX260_.jpg" alt="Python Book" height="300">
-      <img src="Img/Programming_Books/618YQosPQTL.jpg" alt="Java Book" height="300">
-      <img src="Img/Programming_Books/GettingStartedwithSQL1-5bd0740746e0fb0051b96820.jpg" alt="SQL Book" height="300">
-    </div>
+      </div>
+      <div class="carousel">
+        <img src="Img/Programming_Books/41hGo6CTPqL._SX260_.jpg" alt="Python Book" height="300">
+        <img src="Img/Programming_Books/618YQosPQTL.jpg" alt="Java Book" height="300">
+        <img src="Img/Programming_Books/GettingStartedwithSQL1-5bd0740746e0fb0051b96820.jpg" alt="SQL Book" height="300">
+      </div>
+    </div>  
   </body>
+  <div id="foot">
+  </div>
+  <script>
+    $(function(){
+      $("#foot").load("Footer.html");
+    });
+  </script>
 </html>
