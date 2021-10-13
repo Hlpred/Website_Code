@@ -173,3 +173,10 @@ a.navbar__link {
 #postal_code {
     margin-left: 100px;
 }
+
+.carousel  {
+    margin: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
