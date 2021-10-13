@@ -14,6 +14,7 @@ h1 {
 
 body {
     margin: 0;
+    height: 100%
 }
 
 button {
@@ -23,6 +24,7 @@ button {
 
 #navbar {
     position: fixed;
+    z-index:1;
     top: 0;
     height: 60px;
     width: 100%;
@@ -184,11 +186,35 @@ a.navbar__link {
 #footer {
     display: flex;
     height: 100px;
+    bottom: 0px;
     background-color: var(--mainColor);
     justify-content: center;
     align-items: center;
 }
 
 .content {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 240px);
+    margin-bottom: 40px;
+}
+
+.about_img {
+    height: 80%;
+}
+
+.book_grid {
+    display: grid;
+    border: black;
+    margin-right: 10%;
+    
+}
+
+.book_img {
+    margin-left: 20%;
+
+    
+}
+
+.book_spacing {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
 }
