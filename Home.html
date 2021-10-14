@@ -2,6 +2,7 @@
 <head>
     <title>Home Page</title>
     <link href="Main.css" type="text/css" rel="stylesheet" /> 
+    <link href="styles.css" type="text/css" rel="stylesheet" /> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -16,16 +17,16 @@
           });
       </script>
       <div>
-          <h1>
+          <h1 class="display-4 fw-bolder mt-5 pt-5 text-center">
               All the books for you, in one place
           </h1>
       </div>
       <div id="hero_area">
           <img src="Img/Gear-Books-Roundup-671406905.jpg" alt="Wall of Books" id="hero">
-          <button type="button" id="shop_button">Browse Now</button>
+          <a href="Browse.html" class="btn btn-primary btn-lg active position-absolute" role="button" aria-pressed="true">Browse Now</a>
       </div>   
       <div>
-        <h1>
+        <h1 class="text-center mt-5"> 
             Trending Books:
         </h1>
       </div>
