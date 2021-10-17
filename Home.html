@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <html>
   <body>
@@ -22,17 +22,21 @@
           <h1 class="display-4 fw-bolder mt-5 pt-5 text-center">
               All the books for you, in one place
           </h1>
+
+      <div class="hero-area">
+        <div>
+          <img src="Img/Gear-Books-Roundup-671406905.jpg" class="hero" alt="">
+          <a href="Browse.html" class="btn btn-primary btn-lg active position-absolute hero-button" role="button" aria-pressed="true" id="Browse_button">Browse Now</a>
+        </div>  
       </div>
-      <div id="hero_area">
-          <img src="Img/Gear-Books-Roundup-671406905.jpg" alt="Wall of Books" id="hero">
-          <a href="Browse.html" class="btn btn-primary btn-lg active position-absolute" role="button" aria-pressed="true" >Browse Now</a>
-      </div>   
+        
       <div>
         <h1 class="text-center mt-5"> 
             Trending Books:
         </h1>
       </div>
-      <div class="carousel">
+      </div>
+      <!--<div class="carousel">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -54,19 +58,28 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <!--
-<img src="Img/Programming_Books/41hGo6CTPqL._SX260_.jpg" alt="Python Book" height="300" class="img-fluid">
-        <img src="Img/Programming_Books/618YQosPQTL.jpg" alt="Java Book" height="300" class="img-fluid">
-        <img src="Img/Programming_Books/GettingStartedwithSQL1-5bd0740746e0fb0051b96820.jpg" alt="SQL Book" height="300" class="img-fluid">
+      </div>-->
 
-        -->
-        
+      <div id="Book_section1">
+      </div>  
+        <div id="grid5">
+        </div>
+          <script>
+            $(function(){
+              $("#grid5").load("Browse_grid.html");
+            });
+          </script>
       </div>
+      </div>
+
       <div>
         <h1 class="text-center mt-5 mb-5"> 
            You Make This Possible
         </h1>
-        <div class="container">
+        <h5 class="text-center mt-3 mb-5"> 
+          All purchases contribute to supporting literacy and education around the world
+       </h5>
+        <div class="container mb-5">
           <div class="col-sm-12"><img src="Img/girls_raise_their_hands_in_response_to_the_question.jpg" alt="Girls Raise their hands" class="img-fluid mx-auto d-block"></div>
         </div>
       </div>
