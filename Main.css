@@ -104,17 +104,14 @@ a.navbar__link {
 /*Main Home page image and button start*/
 
 .hero {
-    
     margin-top: 50px;
     width: 100%;
     height: auto;
 }
 
 .hero_area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    position: relative;
+    height: 100%;
 }
 
 #shop_button {
@@ -204,9 +201,8 @@ a.navbar__link {
 }
 
 .hero-button{
-
+    position: absolute;
     transform: translate(-50%,-50%);
-
     top: 50%;
     left: 50%;
 
@@ -216,3 +212,6 @@ a.navbar__link {
     background-color: var(--complementaryColor);
 }
 
+.card-bg {
+    background-color: #E37B64 !important;
+}
