@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>Search Page</title>
+    <link href="Main.css" type="text/css" rel="stylesheet" /> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<html>
+  <body>
+    <div class="content">
+      <div id="nav">
+      </div>
+      <script>
+          $(function(){
+            $("#nav").load("Nav.html");
+          });
+      </script>
+      <header class="bg-dark py-lg-5">
+        <div class="container px-4 px-lg-5 mt-xl-5 mb-xl-2">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder mt-5">Browse for the Best Programming Books</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Most popular languages:</p>
+            </div>
+        </div>
+      </header>
+
+    <div id="Book_section1">
+      <div class="container px-4 px-lg-5 pt-4 mt-5">
+        <div class="text-center text-black">
+          <h3 class="display-4 fw-bolder">Python Books:</h3>
+          <p class="lead fw-normal text-black-50 mb-0"><a href="Python.html">See More</a></p>
+        </div>
+      </div>  
+        <div id="grid1">
+        </div>
+          <script>
+            $(function(){
+              $("#grid1").load("Browse_grid.html");
+            });
+          </script>
+      </div>
+    </div>
+    <div id="Book_section2">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="text-center text-black">
+          <h3 class="display-4 fw-bolder">Java Books:</h3>
+          <p class="lead fw-normal text-black-50 mb-0"><a href="Java.html">See More</a></p>
+        </div>
+      </div>  
+        <div id="grid2">
+        </div>
+          <script>
+            $(function(){
+              $("#grid2").load("Browse_grid.html");
+            });
+          </script>
+      </div>
+    </div>
+    <div id="Book_section3">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="text-center text-black">
+          <h3 class="display-4 fw-bolder">SQL Books:</h3>
+          <p class="lead fw-normal text-black-50 mb-0"><a href="SQL.html">See More</a></p>
+        </div>
+      </div>  
+        <div id="grid3">
+        </div>
+          <script>
+            $(function(){
+              $("#grid3").load("Browse_grid.html");
+            });
+          </script>
+      </div>
+    </div>
+    <div id="Book_section4">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="text-center text-black">
+          <h3 class="display-4 fw-bolder">PHP Books:</h3>
+          <p class="lead fw-normal text-black-50 mb-0"><a href="PHP.html">See More</a></p>
+        </div>
+      </div>  
+        <div id="grid4">
+        </div>
+          <script>
+            $(function(){
+              $("#grid4").load("Browse_grid.html");
+            });
+          </script>
+      </div>
+    </div>
+    <div id="Book_section5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="text-center text-black">
+          <h3 class="display-4 fw-bolder">HTML & CSS Books:</h3>
+          <p class="lead fw-normal text-black-50 mb-0"><a href="HTML&CSS.html">See More</a></p>
+        </div>
+      </div>  
+        <div id="grid5">
+        </div>
+          <script>
+            $(function(){
+              $("#grid5").load("Browse_grid.html");
+            });
+          </script>
+      </div>
+    </div>
+    
+  </body>
+  <div id="foot">
+  </div>
+  <script>
+    $(function(){
+      $("#foot").load("Footer.html");
+    });
+  </script>
+</html>

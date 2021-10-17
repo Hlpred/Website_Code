@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>Product Page</title>
+  <link href="Main.css" type="text/css" rel="stylesheet" /> 
+  <link href="styles.css" type="text/css" rel="stylesheet" /> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<html>
+  <body>
+    <div class="content">
+      <div id="nav">
+      </div>
+      <script>
+          $(function(){
+            $("#nav").load("Nav.html");
+          });
+      </script>
+      <div id="product">   
+      </div>
+      <script>
+      $(function(){
+        $("#product").load("Product_content.html");
+      });</script>
+    </div>
+  </body>
+  <div id="foot">
+  </div>
+  <script>
+    $(function(){
+      $("#foot").load("Footer.html");
+    });
+  </script>
+</html>

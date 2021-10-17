@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>SQL Page</title>
+    <link href="Main.css" type="text/css" rel="stylesheet" /> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<html>
+  <body>
+    <div class="content">
+      <div id="nav">
+      </div>
+      <script>
+          $(function(){
+            $("#nav").load("Nav.html");
+          });
+      </script>
+      <header class="bg-dark py-lg-5">
+        <div class="container px-4 px-lg-5 mt-xl-5 mb-xl-2">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder mt-5">SQL Books</h1>
+                <p class="lead fw-normal text-white-50 mb-0"><a href="Browse.html">Back to all Books</a></p>
+            </div>
+        </div>
+      </header>
+    <div id="Book_section1">
+      </div>  
+        <div id="grid3">
+        </div>
+          <script>
+            $(function(){
+              $("#grid3").load("Browse_grid.html");
+            });
+          </script>
+      </div>
+    </div>
+  </body>
+  <div id="foot">
+  </div>
+  <script>
+    $(function(){
+      $("#foot").load("Footer.html");
+    });
+  </script>
+</html>
