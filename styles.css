@@ -235,7 +235,7 @@ sup {
 }
 
 a {
-
+  color: inherit;
   text-decoration: none;
 }
 a:hover {
@@ -3485,7 +3485,7 @@ textarea.form-control-lg {
 .btn-link {
   font-weight: 400;
   color: #0d6efd;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .btn-link:hover {
   color: #0a58ca;
@@ -4527,7 +4527,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #E37B64;
+  background-color: #43b2db;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
