@@ -223,3 +223,7 @@ a.navbar__link {
 .center {
     text-align: center !important;
 }
+
+.bg-header {
+    background-color: #0A6669;
+}
