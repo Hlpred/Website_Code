@@ -10,6 +10,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <html>
+    
     <style>
         body {
     color: #000;
@@ -179,6 +180,7 @@ button:focus {
     .pad-left {
         padding-left: 20px
     }
+    
 }
     </style>
     <div id="nav">
@@ -224,8 +226,29 @@ button:focus {
                     </div>
                     <div class="col-4">
                         <div class="row d-flex justify-content-end px-3">
-                            <p class="mb-0 mr-5" id="cnt1">1</p>
-                            <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span> <span class="vsm-text minus">-</span> </div>
+                            <div class="d-flex flex-column plus-minus"> 
+                                <button class="vsm-text plus" onClick="onClick1()">+</button> <button class="vsm-text minus" onClick="onClick2()">-</button> 
+                                <script type="text/javascript">
+                                    var clicks1 = 1;
+                                    var clicks2 = 1;
+                                    function onClick1() {
+                                        clicks1 += 1;
+                                        document.getElementById("clicks1").innerHTML = clicks1;
+                                    };
+                                    function onClick2() {
+                                        clicks1 -= 1;
+                                        document.getElementById("clicks1").innerHTML = clicks1;
+                                    };function onClick3() {
+                                        clicks2 += 1;
+                                        document.getElementById("clicks2").innerHTML = clicks2;
+                                    };
+                                    function onClick4() {
+                                        clicks2 -= 1;
+                                        document.getElementById("clicks2").innerHTML = clicks2;
+                                    };
+                                    </script>
+                            </div>
+                            <p class="mb-0 mr-5" id="clicks1">1</p>
                         </div>
                     </div>
                     <div class="col-4">
@@ -251,8 +274,10 @@ button:focus {
                     </div>
                     <div class="col-4">
                         <div class="row d-flex justify-content-end px-3">
-                            <p class="mb-0 mr-5" id="cnt2">1</p>
-                            <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span> <span class="vsm-text minus">-</span> </div>
+                            <div class="d-flex flex-column plus-minus"> 
+                                <button class="vsm-text plus" onClick="onClick3()">+</button> <button class="vsm-text minus" onClick="onClick4()">-</button> 
+                            </div>
+                            <p class="mb-0 mr-5" id="clicks2">1</p>
                         </div>
                     </div>
                     <div class="col-4">
