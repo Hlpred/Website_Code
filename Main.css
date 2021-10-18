@@ -1,7 +1,7 @@
 :root {
-    --mainColor: #43B2DB;
+    --mainColor: #796bd8;
     --offWhite: #ebebeb;
-    --complementaryColor: #AC6ED8;
+    --complementaryColor: #1d9d3f;
   }
   
 
@@ -196,7 +196,7 @@ a.navbar__link {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 4px 2px;
+    margin: 4px 4px;
     cursor: pointer;
 }
 
@@ -213,5 +213,13 @@ a.navbar__link {
 }
 
 .card-bg {
-    background-color: #E37B64 !important;
+    background-color: #43b2db  !important;
+}
+
+.nodec {
+    text-decoration: none !important;
+}
+
+.center {
+    text-align: center !important;
 }

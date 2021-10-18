@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <head>
-    <title>Search Page</title>
-    <link href="Main.css" type="text/css" rel="stylesheet" /> 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>Search Page</title>
+  <link href="Main.css" type="text/css" rel="stylesheet" /> 
+  <link href="styles.css" type="text/css" rel="stylesheet" /> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <html>
   <body>
@@ -15,8 +18,8 @@
             $("#nav").load("Nav.html");
           });
       </script>
-      <div>
-          <h1 id="Result_title">Results For: "HTML"</h1>
+      <div class="mt-5 pt-5">
+          <h1 class="Result_title center">Results For: "HTML"</h1>
           <!--<script>
             var search_btn = document.getElementById("search_icon");
             search_btn.addEventListener("click", replaceTitle());
@@ -26,64 +29,12 @@
             }
           </script>-->
       </div>
-      <div class="book_grid">
-        <div class="book_spacing">
-          <img src="Img/463-4638425_book-background-transparent-transparent-background-book-images-png.png" height="100" alt="Book Placeholder" class="book_img">
-          <div>
-            <h3>Book 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime non unde, fuga doloribus tempora eligendi, modi nemo reiciendis quos odio dolore soluta voluptate corporis laborum labore nesciunt autem eos?</p>
-          </div>
-        </div>
-        <div class="book_spacing">
-          <img src="Img/463-4638425_book-background-transparent-transparent-background-book-images-png.png" height="100" alt="Book Placeholder" class="book_img">
-          <div>
-            <h3>Book 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime non unde, fuga doloribus tempora eligendi, modi nemo reiciendis quos odio dolore soluta voluptate corporis laborum labore nesciunt autem eos?</p>
-          </div>
-        </div>
-        <div class="book_spacing">
-          <img src="Img/463-4638425_book-background-transparent-transparent-background-book-images-png.png" height="100" alt="Book Placeholder" class="book_img">
-          <div>
-            <h3>Book 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime non unde, fuga doloribus tempora eligendi, modi nemo reiciendis quos odio dolore soluta voluptate corporis laborum labore nesciunt autem eos?</p>
-          </div>
-        </div>
-        <div class="book_spacing">
-          <img src="Img/463-4638425_book-background-transparent-transparent-background-book-images-png.png" height="100" alt="Book Placeholder" class="book_img">
-          <div>
-            <h3>Book 4</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime non unde, fuga doloribus tempora eligendi, modi nemo reiciendis quos odio dolore soluta voluptate corporis laborum labore nesciunt autem eos?</p>
-          </div>
-        </div>
-        <div class="book_spacing">
-          <img src="Img/463-4638425_book-background-transparent-transparent-background-book-images-png.png" height="100" alt="Book Placeholder" class="book_img">
-          <div>
-            <h3>Book 5</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime non unde, fuga doloribus tempora eligendi, modi nemo reiciendis quos odio dolore soluta voluptate corporis laborum labore nesciunt autem eos?</p>
-          </div>
-        </div>
-        <div class="book_spacing">
-          <img src="Img/463-4638425_book-background-transparent-transparent-background-book-images-png.png" height="100" alt="Book Placeholder" class="book_img">
-          <div>
-            <h3>Book 6</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime non unde, fuga doloribus tempora eligendi, modi nemo reiciendis quos odio dolore soluta voluptate corporis laborum labore nesciunt autem eos?</p>
-          </div>
-        </div>
-        <div class="book_spacing">
-          <img src="Img/463-4638425_book-background-transparent-transparent-background-book-images-png.png" height="100" alt="Book Placeholder" class="book_img">
-          <div>
-            <h3>Book 7</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime non unde, fuga doloribus tempora eligendi, modi nemo reiciendis quos odio dolore soluta voluptate corporis laborum labore nesciunt autem eos?</p>
-          </div>
-        </div>
-        <div class="book_spacing">
-          <img src="Img/463-4638425_book-background-transparent-transparent-background-book-images-png.png" height="100" alt="Book Placeholder" class="book_img">
-          <div>
-            <h3>Book 8</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit maxime non unde, fuga doloribus tempora eligendi, modi nemo reiciendis quos odio dolore soluta voluptate corporis laborum labore nesciunt autem eos?</p>
-          </div>
-        </div>
+      <div id="grid1">   
       </div>
+      <script>
+      $(function(){
+        $("#grid1").load("Browse_grid.html");
+      });</script>
     </div>
   </body>
   <div id="foot">
