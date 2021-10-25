@@ -191,11 +191,11 @@ a.navbar__link {
     background-color: var(--complementaryColor);
     border: none;
     color: white;
-    padding: 20px 34px;
+    padding: 2% 3%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 30px;
     margin: 4px 4px;
     cursor: pointer;
 }
@@ -203,7 +203,7 @@ a.navbar__link {
 .hero-button{
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
+    top: 58.5%;
     left: 50%;
 
 }
@@ -226,4 +226,8 @@ a.navbar__link {
 
 .bg-header {
     background-color: #0A6669;
+}
+
+.Home {
+    padding-top: 0px;
 }

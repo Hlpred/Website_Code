@@ -236,15 +236,20 @@ button:focus {
                                         document.getElementById("clicks1").innerHTML = clicks1;
                                     };
                                     function onClick2() {
-                                        clicks1 -= 1;
-                                        document.getElementById("clicks1").innerHTML = clicks1;
+                                        if (document.getElementById("clicks1").innerHTML >= 1) {
+                                            clicks1 -= 1;
+                                            document.getElementById("clicks1").innerHTML = clicks1;
+                                        }
                                     };function onClick3() {
                                         clicks2 += 1;
                                         document.getElementById("clicks2").innerHTML = clicks2;
                                     };
                                     function onClick4() {
-                                        clicks2 -= 1;
-                                        document.getElementById("clicks2").innerHTML = clicks2;
+                                        if (document.getElementById("clicks2").innerHTML >= 1) {
+                                            clicks2 -= 1;
+                                            document.getElementById("clicks2").innerHTML = clicks2;
+                                        }
+                                        
                                     };
                                     </script>
                             </div>
