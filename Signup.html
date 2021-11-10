@@ -107,55 +107,63 @@ body {
 }    	
 </style>
 </head>
-<div id="nav">
-</div>
-      <script>
-          $(function(){
-            $("#nav").load("Nav.html");
-          });
-      </script>
 <body>
-<div class="signup-form mt-5">
-    <form action="/examples/actions/confirmation.php" method="post">
-		<h2>Sign Up</h2>
-		<p class="hint-text">Create your account. It's free and only takes a minute.</p>
-        <div class="form-group">
-			<div class="row">
-				<div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
-				<div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
-			</div>        	
-        </div>
-        <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
-        </div>
-		<div class="form-group">
-			<label for="cars">Please choose a sequrity question:</label>
-			<select name="sequirity_questions">
-				<option value="mother">What's your mother's maiden name?</option>
-				<option value="street">What street did you grow up on?</option>
-				<option value="city">In what city were you born?</option>
-				<option value="high_school">What high school did you attend?</option>
-				<option value="car">What was the make of your first car?</option>
-		  </select>
-		</div>      
-		<div class="form-group">
-            <input type="text" class="form-control" name="security_answer" placeholder="Sequrity Question Answer" required="required">
-        </div>    
-        <div class="form-group">
-			<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-		</div>
-		<div class="form-group">
-            <div class="text-center"><a class="btn2 mt-auto button" href="Home.html">Sign Up</a></div>
-        </div>
-    </form>
-	<div class="text-center">Already have an account? <a href="Login.html">Login</a></div>
+<div class="content">
+	<div id="nav">
+	</div>
+		  <script>
+			  $(function(){
+				$("#nav").load("Nav.html");
+			  });
+		  </script>
+	<div class="signup-form mt-5">
+		<form action="/examples/actions/confirmation.php" method="post">
+			<h2>Sign Up</h2>
+			<p class="hint-text">Create your account. It's free and only takes a minute.</p>
+			<div class="form-group">
+				<div class="row">
+					<div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+					<div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+				</div>        	
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" name="password" placeholder="Password" required="required">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+			</div>
+			<div class="form-group">
+				<label for="cars">Please choose a sequrity question:</label>
+				<select name="sequirity_questions">
+					<option value="mother">What's your mother's maiden name?</option>
+					<option value="street">What street did you grow up on?</option>
+					<option value="city">In what city were you born?</option>
+					<option value="high_school">What high school did you attend?</option>
+					<option value="car">What was the make of your first car?</option>
+			  </select>
+			</div>      
+			<div class="form-group">
+				<input type="text" class="form-control" name="security_answer" placeholder="Sequrity Question Answer" required="required">
+			</div>    
+			<div class="form-group">
+				<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+			</div>
+			<div class="form-group">
+				<div class="text-center"><a class="btn2 mt-auto button" href="Home.html">Sign Up</a></div>
+			</div>
+		</form>
+		<div class="text-center">Already have an account? <a href="Login.html">Login</a></div>
+	</div>
 </div>
-
 </body>
+<div id="foot">
+</div>
+<script>
+	$(function(){
+		$("#foot").load("Footer.html");
+	});
+</script>
 </html>

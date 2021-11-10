@@ -30,7 +30,6 @@
     left: 157px;
     border: none;
     border-radius: 10px;
-    background-color: #1d9d3f;
     color: #fff;
     padding: 2px 8px;
     cursor: pointer
@@ -43,14 +42,9 @@
     left: 157px;
     border: none;
     border-radius: 10px;
-    background-color: #1d9d3f;
     color: #fff;
     padding: 2px 10px;
     cursor: pointer
-}
-
-.vsm-text:hover {
-    background-color: #187c33;
 }
 
 .book,
@@ -145,7 +139,7 @@ button:focus {
     float: right
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
 
     .book,
     .book-img {
@@ -165,8 +159,31 @@ button:focus {
     .pad-left {
         padding-left: 20px
     }
+
+    .plus-minus {
+        margin-right: 105px;
+    }
     
 }
+
+@media screen and (max-width: 1200px) { 
+    .plus-minus {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) { 
+    .plus-minus {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 766px) { 
+    .plus-minus {
+        margin-right: 115px;
+    }
+}
+
     </style>
     <div id="nav">
     </div>
@@ -197,7 +214,7 @@ button:focus {
         <div class="row d-flex justify-content-center border-top">
             <div class="col-5">
                 <div class="row d-flex">
-                    <div class="book"> <img src="https://i.imgur.com/2DsA49b.jpg" class="book-img"> </div>
+                    <div class="book"> <img src="Img/2DsA49b.jpg" class="book-img img-responsive"> </div>
                     <div class="my-auto flex-column d-flex pad-left">
                         <h6 class="mob-text">Thinking, Fast and Slow</h6>
                         <p class="mob-text">Daniel Kahneman</p>
@@ -250,7 +267,7 @@ button:focus {
         <div class="row d-flex justify-content-center border-top">
             <div class="col-5">
                 <div class="row d-flex">
-                    <div class="book"> <img src="https://i.imgur.com/Oj1iQUX.jpg" class="book-img"> </div>
+                    <div class="book"> <img src="Img/Oj1iQUX.jpg" class="book-img img-responsive"> </div>
                     <div class="my-auto flex-column d-flex pad-left">
                         <h6 class="mob-text">Homo Deus: A Brief<br>History of Tomorrow</h6>
                         <p class="mob-text">Yuval Noah Harari</p>
@@ -281,15 +298,47 @@ button:focus {
                 <div class="card">
                     <div class="row">
                         <div class="col-lg-3 radio-group">
-                            <div class="row d-flex px-3 radio"> <img class="pay" src="https://i.imgur.com/WIAP9Ku.jpg">
+                            <div class="row d-flex px-3 radio" id="radio1" onclick="radioAddClass1()"> <img class="pay" src="Img/WIAP9Ku.jpg">
                                 <p class="my-auto">Credit Card</p>
                             </div>
-                            <div class="row d-flex px-3 radio gray"> <img class="pay" src="https://i.imgur.com/OdxcctP.jpg">
+                            <div class="row d-flex px-3 radio gray" id="radio2" onclick="radioAddClass2()"> <img class="pay" src="Img/OdxcctP.jpg">
                                 <p class="my-auto">Debit Card</p>
                             </div>
-                            <div class="row d-flex px-3 radio gray mb-3"> <img class="pay" src="https://i.imgur.com/cMk1MtK.jpg">
+                            <div class="row d-flex px-3 radio gray mb-3" id="radio3" onclick="radioAddClass3()"> <img class="pay" src="Img/cMk1MtK.jpg">
                                 <p class="my-auto">PayPal</p>
                             </div>
+                            <script type="text/javascript">
+                                let rad1 = document.getElementById("radio1"); 
+                                let rad2 = document.getElementById("radio2");    
+                                let rad3 = document.getElementById("radio3");  
+                                function radioAddClass1() {
+                                    if (rad1.classList.contains("gray")) {
+                                        rad1.classList.remove("gray");
+                                        rad2.classList.add("gray");
+                                        rad3.classList.add("gray");
+                                    } else if (!(rad2.classList.contains("gray") && rad3.classList.contains("gray"))) {
+                                        rad1.classList.add("gray")
+                                    }
+                                }
+                                function radioAddClass2() {
+                                    if (rad2.classList.contains("gray")) {
+                                        rad2.classList.remove("gray");
+                                        rad1.classList.add("gray");
+                                        rad3.classList.add("gray");
+                                    } else if (!(rad1.classList.contains("gray") && rad3.classList.contains("gray"))){
+                                        rad2.classList.add("gray");
+                                    }
+                                }
+                                function radioAddClass3() {
+                                    if (rad3.classList.contains("gray")) {
+                                        rad3.classList.remove("gray");
+                                        rad1.classList.add("gray");
+                                        rad2.classList.add("gray");
+                                    } else if (!(rad2.classList.contains("gray") && rad1.classList.contains("gray"))){
+                                        rad3.classList.add("gray");
+                                    }
+                                }
+                            </script>
                         </div>
                         <div class="col-lg-5">
                             <div class="row px-2">
