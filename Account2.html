@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="Main.css" type="text/css" rel="stylesheet" /> 
+<link href="styles.css" type="text/css" rel="stylesheet" /> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 <title>Bootstrap Simple Registration Form</title>
-<link rel="stylesheet" href="Main.css">
-<link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -86,64 +86,85 @@ body {
 }
 .signup-form .row div:last-child {
 	padding-left: 10px;
-}    	
+} 
 .signup-form a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 .signup-form a:hover {
+	text-decoration: underline;
+}
+.signup-form button:hover {
+	background-color: #187c33;
+	color: white;
 	text-decoration: none;
 }
 .signup-form form a {
-	color: #1d9d3f;
-	text-decoration: none;
+	color: #007bff;;
+	text-decoration: underline;
 }	
 .signup-form form a:hover {
 	text-decoration: underline;
-}  
+}    	
 </style>
 </head>
-<div id="nav">
-</div>
-      <script>
-          $(function(){
-            $("#nav").load("Nav.html");
-          });
-      </script>
 <body>
 <div class="content">
+	<div id="nav">
+	</div>
+		  <script>
+			  $(function(){
+				$("#nav").load("Nav.html");
+			  });
+		  </script>
 	<div class="signup-form mt-5">
 		<form action="/examples/actions/confirmation.php" method="post">
-			<h2>Verify</h2>
+			<h2>Account <br> Settings</h2>
+			<p class="hint-text">Your can edit your profile information here:</p>
 			<div class="form-group">
-				<p>What is your mother's maiden name?</p>
+				<div class="row">
+					<div class="col"><p>First Name:</p><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+					<div class="col"><p>Last Name:</p><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+				</div>        	
 			</div>
 			<div class="form-group">
-				<input type="text" class="form-control" name="text" placeholder="Your answer goes here" required="required">
+				<p>Email:</p>
+				<input type="email" class="form-control" name="email" placeholder="Email" required="required">
 			</div>
 			<div class="form-group">
-				<p>Please enter your new password:</p>
+				<p>Phone Number:</p>
+				<input type="phone" class="form-control" name="phone" placeholder="Phone Number" required="required">
 			</div>
 			<div class="form-group">
-				<input type="password" class="form-control" name="password" placeholder="New Password" required="required">
+				<p>Address:</p>
+				<input type="text" class="form-control" name="address" placeholder="Street Address" required="required">
 			</div>
 			<div class="form-group">
-				<p>Please confirm your new password:</p>
+				<div class="row">
+					<div class="col"><p>City:</p><input type="text" class="form-control" name="city" placeholder="City" required="required"></div>
+					<div class="col"><p>Postal Code:</p><input type="text" class="form-control" name="postal" placeholder="Postal Code" required="required"></div>
+				</div>        	
 			</div>
 			<div class="form-group">
-				<input type="password" class="form-control" name="password" placeholder="Confirm New Password" required="required">
+				<div class="row">
+					<div class="col"><p>State / Province:</p><input type="text" class="form-control" name="region" placeholder="State / Province" required="required"></div>
+					<div class="col"><p>Country:</p><input type="text" class="form-control" name="country" placeholder="Country" required="required"></div>
+				</div>        	
 			</div>
 			<div class="form-group">
-				<div class="text-center"><a class="btn2 mt-auto button" href="Verify_security.html">Verify and Change Password</a></div>
+				<div class="text-center"><a class="btn2 mt-auto button" href="#">Save Changes</a></div>
+			</div>
+			<div class="form-group">
+				<div class="text-center"><a class="btn2 mt-auto button" href="Verify_security.html">Reset Password</a></div>
 			</div>
 		</form>
 	</div>
-	</body>
 </div>
-	<div id="foot">
-	</div>
-	<script>
-		$(function(){
-			$("#foot").load("Footer.html");
-		});
-	</script>
+</body>
+<div id="foot">
+</div>
+<script>
+	$(function(){
+		$("#foot").load("Footer.html");
+	});
+</script>
 </html>
